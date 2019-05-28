@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import {connect} from "react-redux"
 import {allAlbums} from "../actions"
+import AlbumCards from "../components/AlbumCards"
 
 class Albums extends Component{
 
@@ -9,15 +10,20 @@ class Albums extends Component{
     }
     renderAlbums(){
         if(this.props.albums.length !== 0)
-        return this.props.albums.albums.map(album=><h1>{album.title}</h1>)
+        return this.props.albums.albums.map(album=><AlbumCards key={album.id} {...album}/>)
     }
 
 
     render(){
         return(
-             <div>
+            <main className="container">
+           
+                 <div className="col-sm-10 col-md-6 col-lg-12">
+                <div className="row">
                  {this.renderAlbums()}
-             </div>
+                 </div>
+              </div>
+             </main>
         )
 
     }
