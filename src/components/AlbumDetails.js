@@ -1,7 +1,7 @@
 import React from "react"
 
 
-export default AlbunDetails = () => {
+const AlbunDetails = () => {
 
 
 return(
@@ -9,3 +9,5 @@ return(
 )
 
 }
+
+export default AlbunDetails
