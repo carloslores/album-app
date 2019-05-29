@@ -2,11 +2,11 @@ import {
     SHOW_ALL_ALBUMS,
     SHOW_ALBUM_DETAILS
 } from "../actions"
-import { existsTypeAnnotation } from "@babel/types";
+
 
 const initialState = {
     albums: [],
-    album: null
+    album: []
 }
 
 
@@ -22,7 +22,13 @@ export function showAlbums(state=initialState,action){
 export function albumDetails(state=initialState, action){
     switch(action.type){
         case SHOW_ALBUM_DETAILS:
-            return Object.assign({}. state, {album: action.payload})
+        console.log(action.payload)
+            return{
+                ...state,
+                album: action.payload
+            }
+            // return Object.assign({}. state, {album: action.payload})
+            
         default:
             return state
     }
