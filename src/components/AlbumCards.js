@@ -1,11 +1,24 @@
 import React from "react"
+import { Link } from 'react-router-dom'
 import { withStyles } from '@material-ui/core/styles';
+
 
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
 
 import Typography from '@material-ui/core/Typography';
+
+
+const styles = {
+    card: {
+      maxWidth: 345,
+    },
+    media: {
+      height: 140,
+    },
+  };
+  
 
 const AlbumCards = album =>{
 
@@ -20,7 +33,7 @@ const AlbumCards = album =>{
                     <Typography gutterBottom variant="h5" component="h2">
                         {album.title}
                     </Typography>
-                  {/* <Link className="details" to={`/${movie.id}`}> Detalles</Link> */}
+                  <Link className="details" to={`/${album.id}`}> Detalles</Link>
                 </CardContent>
                
             </CardActionArea>
@@ -35,4 +48,4 @@ const AlbumCards = album =>{
 
 }
 
-export default AlbumCards
+export default withStyles(styles)(AlbumCards)
