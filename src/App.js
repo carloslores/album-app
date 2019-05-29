@@ -3,6 +3,8 @@ import {Switch, Route} from "react-router-dom"
 import logo from './logo.svg';
 import './App.css';
 
+
+import Navbar from "./components/NavBar"
 import Home from "./components/Home"
 import Albums from "./components/Albums"
 import AlbumInfo from "./components/AlbumContainer"
@@ -10,7 +12,7 @@ import AlbumInfo from "./components/AlbumContainer"
 function App() {
   return (
     <div className="App">
-    
+      <Navbar id="nav-bar"/>
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/albums" component={Albums} />

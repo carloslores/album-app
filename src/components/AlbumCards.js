@@ -21,9 +21,10 @@ const styles = {
   
 
 const AlbumCards = album =>{
+    console.log(album.id)
 
     return(
-       <article className="col-sm-6 col-md-4 col-lg-6">
+       <article className="col-sm-6 col-md-6 col-lg-6">
            <Card
             className="card card-album" >
             <CardActionArea className="card ">

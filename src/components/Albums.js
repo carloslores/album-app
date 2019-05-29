@@ -16,9 +16,9 @@ class Albums extends Component{
 
     render(){
         return(
-            <main className="container">
+            <main className="album">
            
-                 <div className="col-sm-10 col-md-6 col-lg-12">
+                 <div className="col-sm-10 col-md-12 col-lg-12">
                 <div className="row">
                  {this.renderAlbums()}
                  </div>
