@@ -33,3 +33,32 @@
 .album{
   margin-top: 20vh
 }
+#nav a{
+  color: white;
+  text-decoration: none
+}
+.slider-img{
+
+  min-height: 98vh;
+  min-width: 100vw;
+  margin-top: 2%;
+  object-fit: cover
+ 
+}
+/* .App .total-with{
+  width: 100vw
+} */
+
+@media screen and (max-width: 600px){
+
+
+  
+  .slider-img img{
+    min-height: 92vh;
+    min-width: 100vw;
+    margin-top: 16%;
+  }
+  
+  
+
+}

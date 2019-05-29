@@ -1,4 +1,7 @@
 import React from 'react';
+import {Link} from "react-router-dom"
+
+
 import AppBar from '@material-ui/core/AppBar';
 import Toolbar from '@material-ui/core/Toolbar';
 import IconButton from '@material-ui/core/IconButton';
@@ -66,7 +69,7 @@ const useStyles = makeStyles(theme => ({
 function SearchAppBar() {
   const classes = useStyles();
   return (
-    <div className={classes.root}>
+    <div id="nav" className={classes.root}>
       <AppBar position="fixed">
         <Toolbar>
           <IconButton
@@ -77,9 +80,11 @@ function SearchAppBar() {
           >
             <HomeIcon />
           </IconButton>
+          
           <Typography className={classes.title} variant="h6" noWrap>
-            Album App
+          <a href="/albums" className="album-link">Albums</a> 
           </Typography>
+          
           <div className={classes.search}>
             <div className={classes.searchIcon}>
               <SearchIcon />

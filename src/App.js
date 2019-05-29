@@ -13,7 +13,7 @@ function App() {
   return (
     <div className="App">
       <Navbar id="nav-bar"/>
-        <Switch>
+        <Switch className="total-with">
           <Route exact path="/" component={Home} />
           <Route exact path="/albums" component={Albums} />
           <Route exact path="/:albumid" component={AlbumInfo} />

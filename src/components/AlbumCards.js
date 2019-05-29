@@ -32,7 +32,7 @@ const AlbumCards = album =>{
                 <img className="album-img" src="https://media.idownloadblog.com/wp-content/uploads/2015/06/iTunes-El-Capitan-Wallaper-iPad-By-Jason-Zigrino.png"></img>
                 <CardContent>
                     <Typography gutterBottom variant="h5" component="h2">
-                        {album.title}
+                        Album: {album.title}
                     </Typography>
                   <Link className="details" to={`/${album.id}`}> Detalles</Link>
                 </CardContent>
