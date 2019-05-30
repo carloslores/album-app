@@ -37,13 +37,33 @@
   color: white;
   text-decoration: none
 }
-.slider-img{
+.slider{
+  min-height: 100vh
+}
+.slider img{
+  min-height: 98vh;
+  min-width: 100vw;
+  margin-top: 2%;
+  object-fit: cover
+
+}
+/* .slider-img{
 
   min-height: 98vh;
   min-width: 100vw;
   margin-top: 2%;
   object-fit: cover
  
+} */
+.home img{
+  height: 100vh!important ;
+  object-fit: cover
+}
+
+.avatar img{
+  width: 6vw;
+  border-radius: 55%;
+  margin-right: 3vw
 }
 /* .App .total-with{
   width: 100vw
@@ -52,13 +72,20 @@
 @media screen and (max-width: 600px){
 
 
-  
-  .slider-img img{
+  .slider img{
+    min-height: 92vh;
+    min-width: 217vw;
+    margin-top: 16%;
+  }
+  /* .slider-img img{
     min-height: 92vh;
     min-width: 100vw;
     margin-top: 16%;
+  } */
+  .avatar img{
+    width: 13vw;
+    border-radius: 50%
   }
-  
   
 
 }
