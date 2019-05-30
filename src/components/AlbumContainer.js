@@ -8,12 +8,12 @@ import {getOneAlbum} from "../actions"
 class AlbumContainer extends Component {
     componentDidMount(){
         const { albumId } = this.props.match.params
-        console.log(this.props.album.length !== 0 ? this.props.album : null)
+       
         this.props.getOneAlbum(albumId)
 
     }
     getAlbum = albumId => {
-       // console.log(this.props.album)
+    
         return this.props.getAlbum(albumId)
     }
 
@@ -21,7 +21,7 @@ class AlbumContainer extends Component {
        
         let matchId = this.props.album.album.filter(album=>album.albumId === +this.props.match.params.albumid)
    
-        console.log(Array.isArray(matchId))
+     
   
         return(
             <div className="col-sm-10 col-md-12 col-lg-12 album">
@@ -40,7 +40,6 @@ class AlbumContainer extends Component {
 
 
 const mapStateToProps = state => {
-    console.log(state)
     return {
         album: state.album
     }

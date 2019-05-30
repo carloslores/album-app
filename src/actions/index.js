@@ -8,7 +8,7 @@ export const allAlbums = () => {
     return (dispatch, getState)=>{
         axios.get("https://jsonplaceholder.typicode.com/albums")
             .then(res=>{
-                console.log(res.data)
+           
                 dispatch({type: SHOW_ALL_ALBUMS, payload: res.data})
             })
     }
@@ -18,7 +18,7 @@ export const getOneAlbum = (albumId)=>{
     return (dispatch, getState)=>{
         axios.get(`https://jsonplaceholder.typicode.com/albums/${albumId}/photos`)
             .then(res=>{
-                console.log(res.data)
+                
                 dispatch({type: SHOW_ALBUM_DETAILS, payload: res.data})
             })
 

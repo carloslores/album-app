@@ -35,12 +35,7 @@ function SvgIcons(props) {
   const { classes } = props;
   return (
     <div className={classes.root}>
-      {/* <HomeIcon className={classes.icon} />
-      <HomeIcon className={classes.icon} color="primary" />
-      <HomeIcon className={classes.icon} color="secondary" />
-      <HomeIcon className={classes.icon} color="action" />
-      <HomeIcon className={classes.iconHover} color="error" style={{ fontSize: 30 }} /> */}
-      {/* <HomeIcon color="disabled" className={classes.icon} fontSize="large" /> */}
+      
       <Link to="/">
       <HomeIcon
         className={classes.icon}

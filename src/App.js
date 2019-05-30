@@ -1,6 +1,6 @@
 import React from 'react';
 import {Switch, Route} from "react-router-dom"
-import logo from './logo.svg';
+
 import './App.css';
 
 
@@ -13,12 +13,13 @@ function App() {
   return (
     <div className="App">
       <Navbar id="nav-bar"/>
+      <React.Fragment>
         <Switch className="total-with">
           <Route exact path="/" component={Home} />
           <Route exact path="/albums" component={Albums} />
           <Route exact path="/:albumid" component={AlbumInfo} />
         </Switch>
-
+        </React.Fragment>
     </div>
   );
 }

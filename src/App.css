@@ -2,19 +2,6 @@
   text-align: center;
 }
 
-
-
-.App-header {
-  background-color: #282c34;
-  min-height: 20vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
 .App-link {
   color: #61dafb;
 }
@@ -27,7 +14,7 @@
 .card-album{
   margin: 5%;
   height: 85%;
-  /* width: 80%; */
+
 }
 
 .album{
@@ -47,27 +34,31 @@
   object-fit: cover
 
 }
-/* .slider-img{
+.details{
+  color: #18ceda;
+  font-size: 1.2em;
+  text-decoration: none;
+}
+.details:hover{
+  color: #18ceda;
+  font-size: 1.5em;
+  text-decoration: none
+}
 
-  min-height: 98vh;
-  min-width: 100vw;
-  margin-top: 2%;
-  object-fit: cover
- 
-} */
 .home img{
   height: 100vh!important ;
   object-fit: cover
 }
 
 .avatar img{
-  width: 6vw;
+  width: 5vw;
   border-radius: 55%;
   margin-right: 3vw
 }
-/* .App .total-with{
-  width: 100vw
-} */
+
+.photo-title{
+  font-family: 'Marck Script', cursive;
+}
 
 @media screen and (max-width: 600px){
 
@@ -77,11 +68,7 @@
     min-width: 217vw;
     margin-top: 16%;
   }
-  /* .slider-img img{
-    min-height: 92vh;
-    min-width: 100vw;
-    margin-top: 16%;
-  } */
+
   .avatar img{
     width: 13vw;
     border-radius: 50%

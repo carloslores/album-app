@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom'
 import { withStyles } from '@material-ui/core/styles';
 
 
+
 import Card from '@material-ui/core/Card';
 import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
@@ -21,7 +22,6 @@ const styles = {
   
 
 const AlbumCards = album =>{
-    console.log(album.id)
 
     return(
        <article className="col-sm-6 col-md-6 col-lg-6">
@@ -29,12 +29,15 @@ const AlbumCards = album =>{
             className="card card-album" >
             <CardActionArea className="card ">
                 
-                <img className="album-img" src="https://media.idownloadblog.com/wp-content/uploads/2015/06/iTunes-El-Capitan-Wallaper-iPad-By-Jason-Zigrino.png"></img>
+                <img className="album-img" alt="default-img"src="https://media.idownloadblog.com/wp-content/uploads/2015/06/iTunes-El-Capitan-Wallaper-iPad-By-Jason-Zigrino.png"></img>
                 <CardContent>
-                    <Typography gutterBottom variant="h5" component="h2">
-                        Album: {album.title}
+                <Typography gutterBottom variant="h3" component="h2">
+                    <span className="photo-title">  Album: </span>
                     </Typography>
-                  <Link className="details" to={`/${album.id}`}> Detalles</Link>
+                    <Typography gutterBottom variant="h5" component="h2">
+                    <span className="photo-title"> {album.title}</span>
+                    </Typography>
+                  <Link className="details photo-title" to={`/${album.id}`}> <span>Detalles</span></Link>
                 </CardContent>
                
             </CardActionArea>

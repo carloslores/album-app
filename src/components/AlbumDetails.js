@@ -7,7 +7,7 @@ import Typography from '@material-ui/core/Typography';
 
 const AlbunDetails = album => {
 
-    console.log(album.album)
+  
 return(
    
     <article className="col-sm-6 col-md-6 col-lg-6">
@@ -15,17 +15,18 @@ return(
             className="card card-album" >
             <CardActionArea className="card ">
                 
-                <img className="album-img" src={album.album.url}/>
+                <img className="album-img" alt="album" src={album.album.url} />
                 <CardContent>
-                    <Typography gutterBottom variant="h5" component="h2">
-                        {album.album.title}
+                <Typography gutterBottom variant="h3" component="h2">
+                       <span className="photo-title">Photo album:</span>
                         
                     </Typography>
-                    <Typography gutterBottom variant="h5" component="h2">
-                        {album.album.albumId}
+                    <Typography gutterBottom variant="h4" component="h2">
+                    <span className="photo-title"> {album.album.title}</span>
                         
                     </Typography>
-                  {/* <Link className="details" to={`/${album.id}`}> Detalles</Link> */}
+                   
+                  
                 </CardContent>
                
             </CardActionArea>
